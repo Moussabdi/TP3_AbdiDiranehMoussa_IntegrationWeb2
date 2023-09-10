@@ -44,7 +44,13 @@
 }
 
 .deuxcolvideotext__item__video {
-  margin-top: 7.6em;
+  margin-top: 7.6em !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .deuxcolvideotext__item__video {
+    margin-top: 20rem !important;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -63,6 +69,6 @@
     margin-top: 2rem;
   }
   .deuxcolvideotext__item__video {
-    margin-top: 1rem;
+    margin-top: 5rem !important;
   }
 }

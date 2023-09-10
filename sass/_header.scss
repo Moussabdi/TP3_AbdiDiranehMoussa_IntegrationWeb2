@@ -1,7 +1,7 @@
 @import "variable";
 
 header h1 {
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
 }
 
 %fontMargin {
@@ -10,17 +10,17 @@ header h1 {
 }
 h1 {
   @extend %fontMargin;
-  font-size: 4.5rem;
+  font-size: 4.5rem !important;
   font-weight: 600;
 }
 h2 {
   @extend %fontMargin;
-  font-size: 4rem;
+  font-size: 4rem !important;
   font-weight: 600;
 }
 h3 {
   @extend %fontMargin;
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
   font-weight: 400;
 }
 p {
@@ -29,22 +29,22 @@ p {
 
 @media screen and (max-width: 570px) {
   body {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 
   header h1 {
-    font-size: 3.5;
+    font-size: 3.5 !important;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }

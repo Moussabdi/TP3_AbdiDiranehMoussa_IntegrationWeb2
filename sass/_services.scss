@@ -1,0 +1,8 @@
+@import "variable";
+
+.troiscolimgtext__item__lien {
+  text-decoration: none;
+  background-color: $color-background_btn;
+  color: $color-text-header_footer;
+  padding: 1rem;
+}
