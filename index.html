@@ -9,7 +9,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="dist/output.css" />
     <link rel="icon" href="favicon.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +24,7 @@
         >
           <a href="#" class="flex items-center">
             <img
-              src="../images/logo.png"
+              src="images/logo.png"
               class="h-12 mr-3"
               alt="Logo de MAD Immigration"
             />
@@ -102,72 +103,66 @@
 
     <main>
       <section>
-        <div class="container grid grid-cols-12 gap-4 my-8 mx-auto">
-          <div class="col-span-12 md:col-span-6 bg-red-500">
-            <h1>Nous joindre</h1>
-            <address>
-              <div class="textnumero__item">
-                <div class="textnumero__item1">
-                  <div class="textnumero__item1__text">
-                    <p>Par téléphone :</p>
-                  </div>
-                  <div class="textnumero__item1__numero">
-                    <p>
-                      <a href="tel:418-555-1234">514-442-3076</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </address>
-          </div>
-          <div class="col-span-12 md:col-span-6 bg-blue-500">
-            <address>
-              <div class="textnumero__item">
-                <div class="textnumero__item2">
-                  <div class="textnumero__item2__text">
-                    <p>Par courriel :</p>
-                  </div>
-                  <div class="textnumero__item2__email">
-                    <p>
-                      <a href="mailto:info@consulxperts.com"
-                        >madimmigrationcanadienne@gmail.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </address>
+        <div class="grid grid-cols-12 gap-5 my-8 mx-auto index__section1">
+          <div class="col-span-12 md:col-span-12 contenu-banniere">
+            <h2>Le Canada un choix de vie gagnant!</h2>
+            <h3>
+              MADIC est une entreprise spécialisée dans l’immigration et la
+              citoyenneté canadienne, qui se démarque pour son service de
+              qualité avec un prix concurrentiel unique sur le marché!
+            </h3>
+            <a href="services.html">Voir nos services</a>
           </div>
         </div>
       </section>
-
       <section>
         <div class="container grid grid-cols-12 gap-5 my-8 mx-auto">
-          <div class="col-span-12 mx-auto relative w-full h-screen">
-            <iframe
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.4766866878763!2d-73.70073528444064!3d45.52061217910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918769b1b576b%3A0xc1c8d3829d0db404!2s1940%20Rue%20Patricia%2C%20Saint-Laurent%2C%20QC%20H4L%202X7!5e0!3m2!1sen!2sca!4v1684541297697!5m2!1sen!2sca"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+          <div class="col-span-12 md:col-span-6">
+            <div class="deuxcolvideotext__item__contenu">
+              <h2>Qui sommes nous? :</h2>
+              <div>
+                <p>
+                  Nous sommes une jeune entreprise dynamique œuvrant dans le
+                  domaine de l'immigration canadienne. Notre équipe est
+                  certifiée par le collège de l'immigration et de la
+                  citoyenneté. Nous offrons de service de consultation, coaching
+                  spécialisé et un accompagnement personnalisé dans
+                  l'immigration économique, le regroupement familial, la
+                  résidence temporaire et dans l'humanitaire. Notre approche est
+                  la simplification de l’ensemble des démarches en immigration
+                  et en citoyenneté en utilisant des outils technologie 4.0.
+                  Nous sommes connus également pour notre confidentialité des
+                  dossiers de nos clients, une accessibilité à vos conseillés
+                  durant toute la procédure de votre dossier. Nos conseillés
+                  prennent à cœur les dossiers de nos clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-6">
+            <div class="deuxcolvideotext__item__video my-auto">
+              <iframe
+                class="positionVideo"
+                src="video/3145082083.mp4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
-      <section>
-        <div class="container grid grid-cols-12 gap-5 my-8 mx-auto">
-          <div class="col-span-12 lg:col-span-3 md:col-span-6 bg-red-500">
+      <section class="footer">
+        <div class="container grid grid-cols-12 gap-10 my-8 mx-auto">
+          <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <div class="footer__item1">
               <a href="#" class="footer__item1__logo">
                 <img
-                  src="../images/logo.png"
+                  src="images/logo.png"
                   alt="Logo MAD Immigration"
                   class="logo"
                 />
@@ -205,7 +200,7 @@
               </p>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-3 md:col-span-6 bg-blue-500">
+          <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <div class="footer__item2">
               <p class="footer__item2__heading">Contater nous</p>
               <address>
@@ -225,7 +220,7 @@
               </address>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-3 md:col-span-6 bg-green-500">
+          <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <nav class="footer__item3">
               <p class="footer__item2__heading">Compte</p>
               <ul>
@@ -246,7 +241,7 @@
               </ul>
             </nav>
           </div>
-          <div class="col-span-12 lg:col-span-3 md:col-span-6 bg-yellow-500">
+          <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <nav class="footer__item4">
               <p class="footer__item2__heading">Compagnie</p>
               <ul>
