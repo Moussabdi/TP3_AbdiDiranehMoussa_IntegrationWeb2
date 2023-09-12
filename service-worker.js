@@ -1,8 +1,8 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v1";
+const CACHE_NAME = "static-cache-v4";
 
 //Add list of files to cache here.
-const FILES_TO_CACHE = ["offline.html", "index.html"];
+const FILES_TO_CACHE = ["index.html"];
 
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
@@ -44,7 +44,7 @@ self.addEventListener("fetch", (evt) => {
   evt.respondWith(
     fetch(evt.request).catch(() => {
       return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match("./index.html");
+        return cache.match("TP3_AbdiDiranehMoussa/index.html");
       });
     })
   );
