@@ -1,15 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
     colors: {
-      // ...
-      'tahiti': {
-        light: '#67e8f9',
-        DEFAULT: '#06b6d4',
-        
-      }
+      ColorPrincipal: "#0f8492",
+    },
   },
   plugins: [],
 };
