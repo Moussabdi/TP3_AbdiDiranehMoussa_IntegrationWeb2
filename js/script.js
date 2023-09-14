@@ -24,7 +24,7 @@ const validateForm = () => {
 
   //Validation du Nom de famille
   if (nomValue === "") {
-    setError(nom, "Le nom ne peut pas être vide");
+    setError(nom, "Veuillez entrer svp votre nom!");
     noError = false;
   } else {
     setSuccess(nom);
@@ -32,7 +32,7 @@ const validateForm = () => {
 
   //Validation du Prenom
   if (prenomValue === "") {
-    setError(prenom, "Le prenom ne peut pas être vide");
+    setError(prenom, "Veuillez entrer svp votre prénom!");
     noError = false;
   } else {
     setSuccess(prenom);
@@ -40,10 +40,7 @@ const validateForm = () => {
 
   //Validation du date de naissance
   if (date_naissanceValue === "2000-01-01") {
-    setError(
-      date_naissance,
-      "La date de naissance ne peut pas être 2000-01-01"
-    );
+    setError(date_naissance, "Veuillez entrer votre date de naissance!");
     noError = false;
   } else {
     setSuccess(date_naissance);
@@ -51,7 +48,7 @@ const validateForm = () => {
 
   //Validation du téléphone
   if (telephoneValue === "") {
-    setError(telephone, "Le téléphone ne peut pas être vide");
+    setError(telephone, "Veuillez entrer votre numéro de téléphone!");
     noError = false;
   } else {
     setSuccess(telephone);
@@ -59,10 +56,10 @@ const validateForm = () => {
 
   //Validation du email
   if (emailValue === "") {
-    setError(email, "Email ne peut être vide");
+    setError(email, "Veuillez entrer votre courriel!");
     noError = false;
   } else if (!validateEmail(emailValue)) {
-    setError(email, "Entrez une adresse courriel valide");
+    setError(email, "Veuillez entrer votre courriel!");
     noError = false;
   } else {
     setSuccess(email);
