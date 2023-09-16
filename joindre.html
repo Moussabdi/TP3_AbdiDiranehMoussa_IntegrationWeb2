@@ -8,12 +8,29 @@
       content="MAD Immigration Canadienne inc. est une entreprise Canadienne spécialisée dans l’immigration canadienne, Forte de l’ingéniosité de son équipe d’expérience."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.png" />
+    <meta name="theme-color" content="#2F3BA2" />
 
+    <!-- POUR SAFARI !!! -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="MAD_Immigration_Canada" />
+    <link rel="apple-touch-icon" href="images/icons/icon-180x180.png" />
+
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
     <script defer src="js/script.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -25,7 +42,8 @@
           <a href="#" class="flex items-center">
             <img
               src="images/logo.png"
-              class="h-12 mr-3"
+              width="80"
+              height="80"
               alt="Logo de MAD Immigration"
             />
           </a>
@@ -113,28 +131,28 @@
     <main>
       <section>
         <div class="container grid grid-cols-12 gap-4 my-8 mx-auto">
-          <div class="col-span-12 md:col-span-6 bg-red-500">
+          <div class="col-span-12 md:col-span-6 text-indigo-900">
             <h1>Nous joindre</h1>
             <address>
-              <div class="textnumero__item">
-                <div class="textnumero__item1">
-                  <div class="textnumero__item1__text">
+              <div class="flex justify-between text-4xl max-md:text-lg mt-10">
+                <div class="flex items-center">
+                  <div class="text-indigo-900">
                     <p>Par téléphone :</p>
                   </div>
                   <div class="textnumero__item1__numero">
                     <p>
-                      <a href="tel:418-555-1234">514-442-3076</a>
+                      <a href="tel:514-442-3076">514-442-3076</a>
                     </p>
                   </div>
                 </div>
               </div>
             </address>
           </div>
-          <div class="col-span-12 md:col-span-6 bg-blue-500">
+          <div class="col-span-12 md:col-span-6 text-indigo-900">
             <address>
-              <div class="textnumero__item">
-                <div class="textnumero__item2">
-                  <div class="textnumero__item2__text">
+              <div class="flex justify-between text-4xl max-md:text-lg">
+                <div class="flex items-center justify-between mt-32">
+                  <div class="text-indigo-900">
                     <p>Par courriel :</p>
                   </div>
                   <div class="textnumero__item2__email">
@@ -152,12 +170,11 @@
       </section>
 
       <section>
-        <div class="container grid grid-cols-12 gap-5 my-8 mx-auto">
+        <div class="container grid grid-cols-12 gap-5 my-8 mx-auto mt-20">
           <div class="col-span-12 mx-auto relative w-full h-screen">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.4766866878763!2d-73.70073528444064!3d45.52061217910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918769b1b576b%3A0xc1c8d3829d0db404!2s1940%20Rue%20Patricia%2C%20Saint-Laurent%2C%20QC%20H4L%202X7!5e0!3m2!1sen!2sca!4v1684541297697!5m2!1sen!2sca"
-              frameborder="0"
               style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
@@ -173,14 +190,17 @@
 
     <footer>
       <section class="footer">
-        <div class="container grid grid-cols-12 gap-10 my-8 mx-auto">
+        <div
+          class="container grid grid-cols-12 gap-10 my-8 mx-auto max-md:p-10"
+        >
           <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <div class="footer__item1">
               <a href="#" class="footer__item1__logo">
                 <img
                   src="images/logo.png"
                   alt="Logo MAD Immigration"
-                  class="logo"
+                  width="80"
+                  height="80"
                 />
               </a>
 

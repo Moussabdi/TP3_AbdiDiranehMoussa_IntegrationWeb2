@@ -8,12 +8,29 @@
       content="MAD Immigration Canadienne inc. est une entreprise Canadienne spécialisée dans l’immigration canadienne, Forte de l’ingéniosité de son équipe d’expérience."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.png" />
+    <meta name="theme-color" content="#2F3BA2" />
 
+    <!-- POUR SAFARI !!! -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="MAD_Immigration_Canada" />
+    <link rel="apple-touch-icon" href="images/icons/icon-180x180.png" />
+
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
     <script defer src="js/script.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -24,7 +41,8 @@
           <a href="#" class="flex items-center">
             <img
               src="images/logo.png"
-              class="h-12 mr-3"
+              width="80"
+              height="80"
               alt="Logo de MAD Immigration"
             />
           </a>
@@ -128,7 +146,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Immigration économique
                     </h2>
@@ -167,7 +185,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Parrainage
                     </h2>
@@ -206,7 +224,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Résidence temporaire
                     </h2>
@@ -244,7 +262,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Humanitaire
                     </h2>
@@ -283,7 +301,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Réfugié
                     </h2>
@@ -293,13 +311,11 @@
                     >
                       Le Canada offre l’asile à certaines personnes se trouvant
                       sur son territoire qui craignent la persécution ou qui
-                      seraient en danger si elles devaient partir
+                      seraient en danger si elles devaient partir de la la
+                      torture; une menace à leur vie; le risque de traitements
+                      ou de peines cruels et inusités.
                     </p>
-                    <li>la torture;</li>
-                    <li>une menace à leur vie;</li>
-                    <li>
-                      le risque de traitements ou de peines cruels et inusités.
-                    </li>
+
                     <div class="mt-10">
                       <a class="troiscolimgtext__item__lien" href="#"
                         >En savoir plus</a
@@ -326,7 +342,7 @@
                 <div class="mt-10">
                   <div class="px-10 mb-8">
                     <h2
-                      class="lg:text-5xl md:text-5xl sm:text-lg text-ColorPrincipal"
+                      class="lg:text-5xl md:text-5xl sm:text-lg text-indigo-900"
                     >
                       Gens d'affaires
                     </h2>
@@ -356,14 +372,17 @@
 
     <footer>
       <section class="footer">
-        <div class="container grid grid-cols-12 gap-10 my-8 mx-auto">
+        <div
+          class="container grid grid-cols-12 gap-10 my-8 mx-auto max-md:p-10"
+        >
           <div class="col-span-12 lg:col-span-3 md:col-span-6">
             <div class="footer__item1">
               <a href="#" class="footer__item1__logo">
                 <img
                   src="images/logo.png"
                   alt="Logo MAD Immigration"
-                  class="logo"
+                  width="80"
+                  height="80"
                 />
               </a>
 

@@ -7,5 +7,6 @@ module.exports = {
       ColorPrincipal: "#0f8492",
     },
   },
+
   plugins: [],
 };
