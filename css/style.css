@@ -65,10 +65,6 @@ p {
     font-size: 1.5rem !important;
   }
 }
-.logo {
-  height: 10rem;
-}
-
 .index__section1 {
   background-size: cover;
   background-position: 100% 50%;
@@ -280,7 +276,6 @@ fieldset fieldset {
   background-color: #1a237e;
   color: #fff;
   margin-left: 3rem;
-  padding: 2rem;
 }
 
 .textnumero__item1__numero a:hover {
@@ -292,7 +287,6 @@ fieldset fieldset {
   background-color: #1a237e;
   color: #fff;
   margin-left: 3rem;
-  padding: 2rem;
 }
 
 .textnumero__item2__email a:hover {
