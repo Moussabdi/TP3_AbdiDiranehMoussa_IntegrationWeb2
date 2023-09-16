@@ -19,8 +19,19 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <script defer src="js/script.js"></script>
+    <link rel="manifest" href="manifest.json" />
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
   </head>
 
   <body>
