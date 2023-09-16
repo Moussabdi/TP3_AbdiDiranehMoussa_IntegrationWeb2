@@ -14,23 +14,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
     <meta name="apple-mobile-web-app-title" content="MAD_Immigration_Canada" />
-    <link rel="apple-touch-icon" href="images/icons/icon-180x180.png" />
 
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="manifest" href="manifest.json" />
-    <script defer src="js/script.js"></script>
 
-    <script>
-      // Register service worker.
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js").then((reg) => {
-            console.log("Service worker registered.", reg);
-          });
-        });
-      }
-    </script>
+    <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
